@@ -1,12 +1,12 @@
 # removed from vim-snippets in https://github.com/honza/vim-snippets/commit/316fb0b6699b3457cd855102249d2e619059890e
 snippet "mint(ed)?( (\S+))?" "Minted code typeset" br
-\begin{listing}
-\begin{minted}[breaklines=true,fontsize=\small]{${1:`!p
+\begin{listing}[${1:htpb}]
+\begin{minted}[breaklines=true,fontsize=\small]{${2:`!p
 snip.rv = match.group(3) if match.group(2) is not None else "language"`}}
-${2:${VISUAL:code}}
+${3:${VISUAL:code}}
 \end{minted}
-\caption{${3:caption name}}
-\label{lst:${4:${3/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+\caption{${4:caption name}}
+\label{lst:${5:${4/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
 \end{listing}
 
 $0
