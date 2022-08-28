@@ -1,0 +1,8 @@
+priority +50
+
+# modified version of vim-snippets/Ultisnips for my personal use
+snippet t "Transaction" b
+${1:`!v strftime("%m")`}-${2:`!v strftime("%d")`} ${3:*} ${4:Payee}
+	${5:Expenses}  		£${6:0.00}
+	${7:Assets:Checking}$0
+endsnippet
