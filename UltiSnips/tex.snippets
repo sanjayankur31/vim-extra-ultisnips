@@ -15,3 +15,7 @@ endsnippet
 snippet mintin "Minted inline code typeset" wi
 \mintinline{$1}{$2}$0
 endsnippet
+
+snippet inputmint "Input a file formatted by minted" wi
+\inputminted[fontsize=${1:\tiny},firstline=${2},lastline=${3},linenos}]{${4:language}}{${5:file path}}
+endsnippet
